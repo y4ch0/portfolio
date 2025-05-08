@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll(".links li a");
+    const links = document.querySelectorAll(".aside-items a");
     const sections = Array.from(links).map((link) => document.querySelector(link.getAttribute("href")));
 
     const observerOptions = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.75, // minimum 60% widoczności sekcji
+        threshold: 0.75,
     };
 
     const observer = new IntersectionObserver((entries) => {

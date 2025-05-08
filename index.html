@@ -12,23 +12,26 @@
 </head>
 
 <body>
+    <button class="button menu-toggler">&equiv;</button>
     <nav>
-        <ul class="links">
-            <li class="current"><a href="#">welcome</a></li>
+        <ul class="aside-items">
+            <li><a href="#top">welcome</a></li>
             <li><a href="#about">about me</a></li>
             <li><a href="#projects">projects</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
+    <div></div>
     <main>
         <div class="wrapper">
-            <div class="row">
+            <div class="row" id="top">
                 <div class="col">
                     <h1 class="heading border-1">Hello</h1>
                     <h1 class="subheading">I am <span class="border-2">yacho</span></h1>
-                    <h3 class="thin">UI/UX designer</h3>
+                    <div class="role-wrapper">
+                        <h3 class="thin" id="glitch-header">UI/UX designer</h3>
+                    </div>
                 </div>
-                <div class="col"></div>
             </div>
             <div class="row" style="margin-top: 30rem" id="about">
                 <div class="col shadow">
@@ -53,43 +56,49 @@
             </div>
             <div class="row" id="projects">
                 <div class="col shadow">
-                    <h2>Who I am?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque, natus enim omnis
-                        voluptas id incidunt commodi iste, nisi voluptates necessitatibus, deserunt quidem quibusdam
-                        sapiente. Inventore voluptate ullam itaque laboriosam illo ducimus cumque maxime fugit soluta
-                        maiores earum beatae possimus libero totam praesentium, iusto veritatis nostrum eum modi
-                        cupiditate odit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque, natus enim omnis
-                        voluptas id incidunt commodi iste, nisi voluptates necessitatibus, deserunt quidem quibusdam
-                        sapiente. Inventore voluptate ullam itaque laboriosam illo ducimus cumque maxime fugit soluta
-                        maiores earum beatae possimus libero totam praesentium, iusto veritatis nostrum eum modi
-                        cupiditate odit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque, natus enim omnis
-                        voluptas id incidunt commodi iste, nisi voluptates necessitatibus, deserunt quidem quibusdam
-                        sapiente. Inventore voluptate ullam itaque laboriosam illo ducimus cumque maxime fugit soluta
-                        maiores earum beatae possimus libero totam praesentium, iusto veritatis nostrum eum modi
-                        cupiditate odit?</p>
+                    <h2>Projects that I worked on</h2>
+                    <p></p>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <img src="portfolio.png" alt="" class="project-image">
+                            <h3>y4ch0's portfolio</h3>
+                            <p><b>Used stacks:</b> <span class="badge">HTML</span> <span class="badge">CSS</span> <span
+                                    class="badge">JavaScript</span></p>
+                            <p>The page you're now on.</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="modernify.png" alt="" class="project-image">
+                            <h3>Modernify</h3>
+                            <p><b>Used stacks:</b> <span class="badge">HTML</span> <span class="badge">CSS</span> <span
+                                    class="badge">JavaScript</span></p>
+                            <p>Modernify is a lightweight and modern CSS framework designed to simplify the process of
+                                building responsive and accessible web interfaces. It offers a clean design system with
+                                support for dark mode, customizable variables, and utility classes. Built
+                                with pure HTML and CSS, Modernify is easy to integrate into any frontend project.</p>
+                            <a href="https://y4ch0.github.io/Modernify/" class="button">Check this project &raquo;</a>
+                        </div>
+                        <div class="project-card">
+                            <img src="kzkbielki.png" alt="" class="project-image">
+                            <h3>KZK Bielki</h3>
+                            <p><b>Used stacks:</b> <span class="badge">HTML</span> <span class="badge">CSS</span> <span
+                                    class="badge">JavaScript</span> <span class="badge">PHP</span></p>
+                            <p>KZK Bielki was a realistic public transport simulation on ROBLOX, inspired by Polish
+                                municipal transit systems. It featured detailed bus routes, schedules, and dynamic
+                                passenger information displays. The project focuses on immersion through custom models
+                                and a lifelike urban environment. It was developed by me in 2022-2025.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row" id="contact">
                 <div class="col shadow">
-                    <h2>Who I am?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque, natus enim omnis
-                        voluptas id incidunt commodi iste, nisi voluptates necessitatibus, deserunt quidem quibusdam
-                        sapiente. Inventore voluptate ullam itaque laboriosam illo ducimus cumque maxime fugit soluta
-                        maiores earum beatae possimus libero totam praesentium, iusto veritatis nostrum eum modi
-                        cupiditate odit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque, natus enim omnis
-                        voluptas id incidunt commodi iste, nisi voluptates necessitatibus, deserunt quidem quibusdam
-                        sapiente. Inventore voluptate ullam itaque laboriosam illo ducimus cumque maxime fugit soluta
-                        maiores earum beatae possimus libero totam praesentium, iusto veritatis nostrum eum modi
-                        cupiditate odit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque, natus enim omnis
-                        voluptas id incidunt commodi iste, nisi voluptates necessitatibus, deserunt quidem quibusdam
-                        sapiente. Inventore voluptate ullam itaque laboriosam illo ducimus cumque maxime fugit soluta
-                        maiores earum beatae possimus libero totam praesentium, iusto veritatis nostrum eum modi
-                        cupiditate odit?</p>
+                    <h2>Contact / social media</h2>
+                    <p><b>E-mail:</b> email@xyz.com</p>
+                    <p><b>GitHub:</b> <a href="https://github.com/y4ch0">GitHub profile</a></p>
                 </div>
+            </div>
+            <div class="row">
+                <p>y4ch0 &copy; 2025 | All rights reserved</p>
             </div>
         </div>
     </main>
@@ -108,6 +117,82 @@
                 $(".scroll-arrow").hide(200);
             } else {
                 $(".scroll-arrow").show(200);
+            }
+        })
+        const $header = $('#glitch-header');
+
+        function glitchOnce() {
+            const left = Math.floor(Math.random() * 20 - 10);
+            const top = Math.floor(Math.random() * 20 - 10);
+
+            const scale = 0.9 + Math.random() * 0.2;
+
+            const rotate = Math.floor(Math.random() * 6 - 3);
+
+            const r = Math.floor(Math.random() * 3) + 1;
+            const g = Math.floor(Math.random() * 3) + 1;
+            const b = Math.floor(Math.random() * 3) + 1;
+
+            $header.css({
+                transform: `translate(${left}px, ${top}px) scale(${scale}) rotate(${rotate}deg) skew(${rotate}deg, ${-rotate}deg)`,
+                textShadow: `
+                    ${r}px 0 red,
+                    ${-g}px 0 lime,
+                    0 ${b}px blue
+                `,
+            });
+            setTimeout(() => {
+                $header.css({
+                    transform: 'translate(0, 0) scale(1) rotate(0) skew(0, 0)',
+                    textShadow: 'none',
+                });
+            }, 100);
+        }
+
+        function startGlitchLoop() {
+            function cycle() {
+                const burstCount = Math.floor(Math.random() * 4) + 2;
+                for (let i = 0; i < burstCount; i++) {
+                    setTimeout(glitchOnce, i * 80);
+                }
+                const delay = Math.random() * 4000 + 6000;
+                setTimeout(cycle, delay);
+            }
+
+            cycle();
+        }
+
+        function changeText() {
+            const labels = [
+                "UI/UX designer",
+                "Front-end developer"
+            ]
+            let currentIndex = 0;
+            function cycle() {
+                glitchOnce();
+                $("#glitch-header").text(labels[currentIndex]);
+                currentIndex++;
+                if (currentIndex >= labels.length) {
+                    currentIndex = 0;
+                }
+                setTimeout(cycle, 10000);
+            }
+
+            cycle();
+        }
+
+        changeText();
+
+        startGlitchLoop();
+    </script>
+    <script>
+        $(".menu-toggler").on("click", () => {
+            if ($("nav").css("display") == "none") {
+                $("nav").css("display", "flex");
+                $(".menu-toggler").html("&times;");
+            } else {
+                $("nav").css("display", "none");
+                $(".menu-toggler").html("&equiv;");
             }
         })
     </script>
