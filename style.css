@@ -46,6 +46,11 @@ h2 {
     font-size: 3rem;
 }
 
+h1,
+h2 {
+    text-shadow: 4px 4px 6px rgba(255, 255, 255, 1);
+}
+
 h1.subheading {
     font-weight: 400;
     font-size: 6rem;
@@ -55,9 +60,9 @@ h1.subheading {
 h1.border-1 {
     border-left: 0.6rem solid #0DFF00;
     border-top: 0.6rem solid #0DFF00;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     padding-top: 1rem;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
     display: flex;
     width: fit-content;
 }
@@ -159,7 +164,9 @@ main .wrapper .row .col {
 main .wrapper .row.shadow,
 main .wrapper .col.shadow {
     background-color: #fff;
-    padding: 1.5rem 2rem;
+    padding: 1.25rem 2.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2.25rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -193,6 +200,20 @@ main .wrapper .col.shadow {
 .projects-grid .project-card {
     color: #000;
     text-decoration: none;
+    overflow: hidden;
+    transition: scale 350ms ease;
+}
+
+.projects-grid .project-card:hover {
+    scale: 1.03;
+}
+
+.projects-grid .project-card .project-image {
+    width: calc(100% + 4.5rem);
+    max-width: unset;
+    margin-left: -2.25rem;
+    margin-top: -1.25rem;
+    margin-bottom: 1rem;
 }
 
 .projects-grid .project-card h3 {
@@ -212,6 +233,34 @@ main .wrapper .col.shadow {
     font-weight: bold;
     cursor: pointer;
     border: none;
+    display: inline-flex;
+}
+
+.button.view-project {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    border-radius: 3rem;
+    font-size: 2rem;
+    padding: 0;
+    text-decoration: none !important;
+    position: relative;
+}
+
+.button.view-project span {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+    transition: all 150ms ease;
+    transition-property: top, right, transform;
+    margin-top: -0.25rem;
+}
+
+.button.view-project:hover span {
+    transform: translateY(-65%) translateX(70%);
 }
 
 .button.menu-toggler {
