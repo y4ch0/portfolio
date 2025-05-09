@@ -49,7 +49,7 @@ h2 {
 
 h1,
 h2 {
-    text-shadow: 4px 4px 6px rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 6px rgba(255, 255, 255, 1);
 }
 
 h1.subheading {
@@ -218,8 +218,8 @@ main .wrapper .col.shadow {
 }
 
 .projects-grid .project-card h3 {
-    border-left: 0.3rem solid #0DFF00;
-    border-top: 0.3rem solid #0DFF00;
+    border-left: 0.3rem dotted #000;
+    border-bottom: 0.3rem dotted #000;
     padding: 0.3rem;
     display: flex;
     width: fit-content;
@@ -303,6 +303,17 @@ a:hover {
     padding: 0.25rem 0.35rem;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media screen and (max-width: 1024px) {
     :root {
         font-size: 90%;
@@ -331,5 +342,9 @@ a:hover {
 
     main .wrapper .row {
         flex-direction: column;
+    }
+
+    nav ul.aside-items {
+        padding: 0;
     }
 }
