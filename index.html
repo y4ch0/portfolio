@@ -4,75 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yacho [UI/UX designer]</title>
+    <title>yacho [Front-end developer]</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="scrollspy.js"></script>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="background"></div>
+    <div class="background">
+    </div>
     <button class="button menu-toggler">&equiv;</button>
-    <nav>
-        <ul class="aside-items">
-            <li><a href="#top">welcome</a></li>
-            <li><a href="#about">about me</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-    </nav>
     <div></div>
     <main>
         <div class="wrapper">
-            <div class="row" id="top">
-                <div class="col fade-in">
-                    <h1 class="heading border-1">Hello</h1>
-                    <h1 class="subheading">I am <span class="border-2">yacho</span></h1>
-                    <div class="role-wrapper">
-                        <h3 class="thin" id="glitch-header">UI/UX designer</h3>
-                    </div>
+            <nav>
+                <ul>
+                    <li><a href="#top">welcome</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="row fade-in" id="top">
+                <div class="col intro shadow" style="flex: 2.5;">
+                    <header>
+                        <img src="avatar.jpg" class="avatar-img-small">
+                        <div>
+                            <h3>Hi! I'm Adrian.</h3>
+                            <h4 class="subtle">Front-end developer</h4>
+                        </div>
+                    </header>
+                    <h1>Loves to learn. Loves to keep with trends.</h1>
+                    <p>I enjoy learning new things that helps me keep with the trends while allowing me to improve my
+                        skills.</p>
                 </div>
-            </div>
-            <div class="row fade-in" style="margin-top: 30rem" id="about">
-                <div class="col shadow">
-                    <h2>About me</h2>
-                    <p style="font-size: 1.5rem">Hello! I am Adrian.</p>
-                    <h3>👋 Who exactly I am?</h3>
-                    <p>My name is Adrian, I'm 19 years old, and I'm from Poland. I've been passionate about
-                        interface design and creating user-friendly digital experiences for over three years.
-                    </p>
-                    <h3>💡 I'm interested in...</h3>
-                    <p>As a UI/UX Designer and Front-end Developer, I create modern, intuitive web applications. I use
-                        Visual Studio Code for coding and Figma for design work on a daily basis. I'm particularly
-                        interested in frameworks like ReactJS and Qwik, which I use to expand my skills in both design
-                        and development.</p>
-                </div>
-                <div class="col shadow avatar-bg">
-                    <h2>y4ch0</h2>
-                    <h4 style="opacity: 0.5;font-weight: normal;">Front-end developer</h4>
+                <div class="col shadow avatar-bg" style="min-height: 25rem;flex: 1;">
                     <img src="yacho.png" class="avatar-img">
                 </div>
             </div>
-            <div class="row fade-in">
-                <div class="col shadow">
-                    <h3>↩️ My past experience</h3>
-                    <p>For the past two years, I've been attending Figma Config, a major industry event that helps me
-                        stay updated with the latest trends and innovations in design. I've also participated in
-                        AI-focused workshops, where I learned how to craft effective prompts, explored the capabilities
-                        of AI, and discussed the ethical and security risks it may pose.</p>
-                    <p>I'm currently a student at a technical school and will soon receive the title of
-                        certified programming technician after passing the INF.03 and INF.04 exams.</p>
-                    <h3>😮 Interesting facts about me</h3>
-                    <p>Along the way, I've gained practical experience — including winning the Code&Connect competition
-                        at the Olsztyn Higher School, where I was awarded a voucher for a free ICDL certification exam.
-                    </p>
-                    <p>I strive to continuously grow, gain hands-on experience, and combine aesthetics with usability.
-                        My goal is to create products that not only look great but also solve real user problems.</p>
-                </div>
-            </div>
-            <h2 id="projects" class="fade-in" style="margin-top: 10rem;">Projects</h2>
-            <div class="row fade-in">
+            <div class="row fade-in" id="projects">
                 <div class="col projects-grid">
                     <div class="col shadow project-card">
                         <img src="portfolio.png" alt="" class="project-image">
