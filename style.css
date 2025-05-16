@@ -19,6 +19,7 @@ body {
     overflow-x: hidden;
     font-weight: 350;
     color: #eeeeee;
+    background-color: #0b0c25;
 }
 
 .background {
@@ -107,6 +108,7 @@ header .socials a.icon {
     border-radius: 0.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -178,7 +180,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 4rem;
 }
 
 main .wrapper {
@@ -371,6 +373,20 @@ a:hover {
     animation: avatar-anim 6s infinite ease-in-out;
 }
 
+img.stack-bg {
+    width: 20rem;
+    aspect-ratio: 1/1;
+    position: absolute;
+    opacity: 0.15;
+    rotate: 5deg;
+    bottom: -2rem;
+    right: -2rem;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
 @keyframes avatar-anim {
     0% {
         transform: translateY(0.75rem);
@@ -396,19 +412,6 @@ a:hover {
 
     main .wrapper {
         width: 90vw;
-    }
-
-    .button.menu-toggler {
-        display: flex;
-    }
-
-    nav {
-        align-items: center;
-        justify-content: center;
-        background-color: #0b0c25;
-        width: 100vw;
-        height: 100%;
-        display: none;
     }
 
     .projects-grid {
