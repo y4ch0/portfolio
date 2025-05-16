@@ -384,6 +384,10 @@ a:hover {
         display: none;
     }
 
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     main .wrapper .row {
         flex-direction: column;
     }
